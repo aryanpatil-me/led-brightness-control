@@ -22,8 +22,8 @@ A simple Arduino project to control the brightness of an LED using two push butt
 - LED on pin D3 (PWM)
 - Resistors act as pull-ups
 
-## Code
-See 'led_brightness_control.ion' in this reposistory.
+## Arduino Code
+[See 'led_brightness_control.ion' in this reposistory.](https://github.com/aryanpatil-me/led-brightness-control/blob/main/led_brightness_control.ion)
 
 ## Circuit Image
 ![circuit_diagram](https://github.com/user-attachments/assets/4a26c6d6-33b6-49d3-9b33-b56a96a5ece2)
