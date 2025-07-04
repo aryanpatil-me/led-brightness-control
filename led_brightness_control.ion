@@ -1,0 +1,43 @@
+// Variables
+int upPin = 7;
+int downPin = 6;
+int ledPin = 3;
+int upVal;
+int downVal;
+int brightVal = 0;
+int delayTime = 250;
+
+void setup() {
+  // setting pinModes for different pins:
+  pinMode(upPin, INPUT);
+  pinMode(downPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+
+  // Starting serial monitor at the broad rate of 9600.
+  Serial.begin(9600);
+}
+
+void loop() {
+  // reading values from push buttons:
+  upVal = digitalRead(upPin);      // generally equals to 1 for pull up resistors.
+  downVal = digitalRead(downPin);  // generally equals to 1 for pull up resistors.
+
+  // if conditions to increase and decrease brightness:
+  if (upVal == 0) {
+    brightVal = brightVal + 5;
+  }
+  if (downVal == 0) {
+    brightVal = brightVal - 5;
+  }
+
+  // limiting conditions
+  if (brightVal >= 255) {
+    brightVal = 255;
+  }
+  if (brightVal <= 0) {
+    brightVal = 0;
+  }
+  // setting led light to show result:
+  analogWrite(ledPin, brightVal);
+  delay(delayTime);
+}
