@@ -26,6 +26,7 @@ A simple Arduino project to control the brightness of an LED using two push butt
 See 'led_brightness_control.ion' in this reposistory.
 
 ## Circuit Image
+![circuit_diagram](https://github.com/user-attachments/assets/4a26c6d6-33b6-49d3-9b33-b56a96a5ece2)
 
 ---
 
