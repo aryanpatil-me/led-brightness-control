@@ -1,7 +1,7 @@
 // Variables
-int upPin = 7;
-int downPin = 6;
-int ledPin = 3;
+int upPin = D7;
+int downPin = D6;
+int ledPin = D3;
 int upVal;
 int downVal;
 int brightVal = 0;
